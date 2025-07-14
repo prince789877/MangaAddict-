@@ -1,19 +1,12 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-    </Router>
+    <div style={{ color: 'white', backgroundColor: '#111', minHeight: '100vh', padding: '2rem' }}>
+      <h1>MangaAddict</h1>
+      <p>Welcome to the dark-themed manga reading site!</p>
+    </div>
   );
-}
+};
 
 export default App;
